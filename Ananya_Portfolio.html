@@ -36,8 +36,8 @@ section{pointer-events:none;display:flex;flex-direction:column;justify-content:f
 .proj button{all:unset;cursor:pointer;display:block;width:100%}
 .proj button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
 .proj h3{font-size:1.5rem;margin:0}
-.proj .more{max-height:0;overflow:hidden;transition:max-height .5s ease}
-.proj.open .more{max-height:14rem}
+.proj .more{max-height:0;overflow:hidden;visibility:hidden;transition:max-height .5s ease,visibility 0s linear .5s}
+.proj.open .more{max-height:20rem;visibility:visible;transition:max-height .5s ease,visibility 0s}
 .proj ul{margin:.6rem 0 0;padding-left:1.1rem}
 #loader{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:#0b1511;color:var(--gold);font-family:Fraunces,serif;transition:opacity .8s}
 #loader.off{opacity:0;pointer-events:none}
@@ -110,9 +110,9 @@ body:not(.ready){touch-action:none}
 <section id="projects" style="min-height:190vh;padding-top:10vh">
   <div style="max-width:34rem" class="md:ml-auto w-full">
     <h2 class="card" style="font-size:2rem;margin-bottom:1rem;padding:.9rem 1.25rem;font-weight:300;font-family:Fraunces,serif">Product projects (GrowthX)</h2>
-    <article class="card proj" data-i="0"><button aria-expanded="false"><h3>Acquisition</h3><p style="margin:.2rem 0 0">Who is the product for, and how do they find it?</p></button><div class="more"><ul><li>Researched the ideal customer profile (ICP).</li><li>Benchmarked competitors on positioning and channels.</li><li>Turned findings into acquisition priorities.</li></ul></div></article>
-    <article class="card proj" data-i="1"><button aria-expanded="false"><h3>Onboarding teardown</h3><p style="margin:.2rem 0 0">Where do new users reach value, and where do they drop?</p></button><div class="more"><ul><li>Walked the onboarding flow step by step.</li><li>Defined activation metrics for the first moment of value.</li><li>Flagged drop-off points and fixes to test.</li></ul></div></article>
-    <article class="card proj" data-i="2"><button aria-expanded="false"><h3>Engagement and retention</h3><p style="margin:.2rem 0 0">Which users stay, and why?</p></button><div class="more"><ul><li>Segmented users by behaviour.</li><li>Compared engagement and churn across segments.</li><li>Proposed retention plays for each segment.</li></ul></div></article>
+    <article class="card proj" data-i="0"><button aria-expanded="false"><h3>Acquisition</h3><p style="margin:.2rem 0 0">Who is the product for, and how do they find it?</p></button><div class="more"><ul><li>Researched the ideal customer profile (ICP).</li><li>Benchmarked competitors on positioning and channels.</li><li>Turned findings into acquisition priorities.</li></ul><p style="margin:.8rem 0 0"><a class="btn main" href="https://growthx.club/proof-of-work/food-and-beverages/the-whole-truth-foods/acquisition-project-----the-whole-truth---ananya-rathi%7C67ebe0449df0c8d7c6c3b7c8" target="_blank" rel="noopener">View project on GrowthX ↗</a></p></div></article>
+    <article class="card proj" data-i="1"><button aria-expanded="false"><h3>Onboarding teardown</h3><p style="margin:.2rem 0 0">Where do new users reach value, and where do they drop?</p></button><div class="more"><ul><li>Walked the onboarding flow step by step.</li><li>Defined activation metrics for the first moment of value.</li><li>Flagged drop-off points and fixes to test.</li></ul><p style="margin:.8rem 0 0"><a class="btn main" href="https://growthx.club/proof-of-work/food-and-beverages/the-whole-truth-foods/onboarding-project-----the-whole-truth---ananya-rathi%7C6a390277570ecc4ea33b7364" target="_blank" rel="noopener">View project on GrowthX ↗</a></p></div></article>
+    <article class="card proj" data-i="2"><button aria-expanded="false"><h3>Engagement and retention</h3><p style="margin:.2rem 0 0">Which users stay, and why?</p></button><div class="more"><ul><li>Segmented users by behaviour.</li><li>Compared engagement and churn across segments.</li><li>Proposed retention plays for each segment.</li></ul><p style="margin:.8rem 0 0"><a class="btn main" href="https://growthx.club/proof-of-work/food-and-beverages/the-whole-truth-foods/engagement---retention-project-----the-whole-truth-foods---ananya-rathi%7C67f118fca28ad329906e4fd8" target="_blank" rel="noopener">View project on GrowthX ↗</a></p></div></article>
     <article class="card proj" data-i="3"><button aria-expanded="false"><h3>Monetization</h3><p style="margin:.2rem 0 0">What should each customer segment pay?</p></button><div class="more"><ul><li>Applied RFM (recency, frequency, monetary) analysis.</li><li>Used the segments to shape pricing.</li><li>Recommended pricing by segment.</li></ul></div></article>
   </div>
 </section>
